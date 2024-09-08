@@ -9,7 +9,7 @@
 /*   Estilos generales  */
 /************************/
 body main {
-  background-image: url(../img/img-fondo.jfif);
+  background-image: url("../img/img-fondo.jfif");
   background-repeat: none;
   font-family: oswald;
 
