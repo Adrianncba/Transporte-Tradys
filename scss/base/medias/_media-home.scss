@@ -1,0 +1,70 @@
+  ///////////////////////////////
+ //    ESTILOS INDEX - TABLET //
+///////////////////////////////
+
+@media screen and (min-width:600px) {
+    main{
+        .contenedor-main-index{
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: 10%, 80%, 10%;
+            grid-template-areas:
+              "titulo titulo titulo"
+              "imagen2 imagen2 imagen2"
+              "texto1 imagen texto2";    
+            .titulo-main-index{
+                grid-area: titulo;
+           }
+            .bloque-uno-main-index{
+                grid-area: imagen2;
+                padding-bottom: 4rem;
+
+          }
+            .bloque-dos-main-index{
+                grid-area: texto1;            
+            }
+            .bloque-tres-main-index{
+                grid-area: imagen;
+            }
+            .bloque-cuatro-main-index{
+                grid-area: texto2;               
+            }    
+        }
+    }
+}
+
+  ///////////////////////////////
+ //   ESTILOS INDEX - DESTOKP //
+///////////////////////////////
+@media screen and (min-width:1024px) {
+    main{
+        padding: 50px;
+            .contenedor-main-index{
+                grid-template-areas:
+                "titulo titulo  titulo"
+                "texto1 imagen2 texto2"
+                "camion camion camion";
+                gap: 20px; 
+                    .titulo-main-index{
+                        padding: 20px;
+                        padding-left: 450px;
+                        color: whitesmoke;
+                        background-color: rgba(255, 0, 0, 0.306);
+                     }
+                     .bloque-uno-main-index{
+                        grid-area: camion;
+                     }
+                     .bloque-dos-main-index{
+                        grid-area: texto1;
+                     }
+                     .bloque-tres-main-index{
+                        grid-area: imagen2;
+                     }
+                     .bloque-cuatro-main-index{
+                        grid-area: texto2;
+                     }
+            }
+    }
+
+
+}

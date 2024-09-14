@@ -5,6 +5,54 @@
   box-sizing: border-box;
 }
 
+main {
+  padding: 10px;
+}
+main .contenedor-main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+}
+main .contenedor-main-index .titulo-main-index h1 span {
+  color: #ED1C24;
+}
+main .contenedor-main-index .bloque-uno-main-index .imagenes-index {
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 20px;
+  background-color: rgba(237, 28, 35, 0.2784313725);
+  padding: 10PX;
+}
+main .contenedor-main-index .bloque-dos-main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .contenedor-main-index .bloque-dos-main-index .estampas-index {
+  width: 20%;
+}
+main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 20px;
+  background-color: rgba(237, 28, 35, 0.2784313725);
+  padding: 10PX;
+}
+main .contenedor-main-index .bloque-cuatro-main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .contenedor-main-index .bloque-cuatro-main-index .estampas-index {
+  width: 20%;
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/img-bg-2.jfif);
   background-position: center;
@@ -12,10 +60,6 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-}
-
-main {
-  padding: 30px;
 }
 
 .navbar-tablet {
@@ -158,6 +202,57 @@ footer div img {
   }
   footer .footer-depositos ul li {
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 600px) {
+  main .contenedor-main-index {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 10%, 80%, 10%;
+    grid-template-areas: "titulo titulo titulo" "imagen2 imagen2 imagen2" "texto1 imagen texto2";
+  }
+  main .contenedor-main-index .titulo-main-index {
+    grid-area: titulo;
+  }
+  main .contenedor-main-index .bloque-uno-main-index {
+    grid-area: imagen2;
+    padding-bottom: 4rem;
+  }
+  main .contenedor-main-index .bloque-dos-main-index {
+    grid-area: texto1;
+  }
+  main .contenedor-main-index .bloque-tres-main-index {
+    grid-area: imagen;
+  }
+  main .contenedor-main-index .bloque-cuatro-main-index {
+    grid-area: texto2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 50px;
+  }
+  main .contenedor-main-index {
+    grid-template-areas: "titulo titulo  titulo" "texto1 imagen2 texto2" "camion camion camion";
+    gap: 20px;
+  }
+  main .contenedor-main-index .titulo-main-index {
+    padding: 20px;
+    padding-left: 450px;
+    color: whitesmoke;
+    background-color: rgba(255, 0, 0, 0.306);
+  }
+  main .contenedor-main-index .bloque-uno-main-index {
+    grid-area: camion;
+  }
+  main .contenedor-main-index .bloque-dos-main-index {
+    grid-area: texto1;
+  }
+  main .contenedor-main-index .bloque-tres-main-index {
+    grid-area: imagen2;
+  }
+  main .contenedor-main-index .bloque-cuatro-main-index {
+    grid-area: texto2;
   }
 }
 
