@@ -1,0 +1,83 @@
+ 
+
+ ///////////////////////////////
+ //    ESTILOS NAVBAR-TABLET  //
+///////////////////////////////
+@media screen and (min-width:600px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+           
+        .navbar-mobile{
+            display: none;
+        }
+        .navbar-tablet {
+            display: flex;
+            padding-right: 20%;
+            align-items: center;
+            background-color: rgba(255, 0, 0, 0.508);
+            justify-content: space-between;
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    gap: 20px;
+                    padding-bottom: 10px; 
+                    .estilos-nav{
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 10px;
+                        background-color: transparent;
+                        li{
+                            a{
+                                margin-left: 20px;
+                                text-decoration: none;
+                                color: rgba(245, 245, 245, 0.341);
+                                background-color: transparent;
+                                font-family: oswald;
+                                text-align: center;
+                                font-size: 1.3rem;
+                             }
+                             a:hover{
+                                background-color:rgba(245, 245, 245, 0.256);
+                                border-radius: 10px;
+                                padding: 10px;
+                            }
+                        }
+                  }
+              }
+
+
+            }            
+        }
+   
+    }
+}
+///////////////////////////////
+ //  ESTILOS NAVBAR-DESTOKP  //
+///////////////////////////////
+@media screen and (min-width:1024px) {
+    header{
+        justify-content: space-between;
+        .navbar-tablet{
+                   nav{
+                         ul{
+                              .estilos-nav{
+                                  padding: 10px;
+                                  padding-left: 40px;
+                                  li{
+                                    padding-top: 20px;
+                                    padding-left: 50px;
+                                    a{
+                                     padding: 10px 20px; 
+                                    }
+                                  }
+                }
+            }
+        } 
+        }
+
+    }
+}

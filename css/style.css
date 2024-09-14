@@ -1,461 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/************************/
-/*   Estilos generales  */
-/************************/
-body main {
-  background-image: url("../img/img-fondo.jfif");
-  background-repeat: none;
-  font-family: oswald;
-
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/img-bg-2.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
   padding: 30px;
 }
 
-/* NAVBAR GENERAL */
 .navbar-tablet {
   display: none;
 }
 
-.navbar-mobile {
-  background-color: #ED1C24;
+header .navbar-mobile {
+  background-color: rgba(255, 0, 0, 0.508);
 }
-
-header div img {
-  width: 16rem;
+header .navbar-mobile nav div div .estilos-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: transparent;
 }
-
-header nav ul {
+header .navbar-mobile nav div div .estilos-nav li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.341);
+  background-color: transparent;
+  font-family: oswald;
+  text-align: center;
+  font-size: 1.3rem;
+}
+header .navbar-mobile nav div div .estilos-nav li a:hover {
+  background-color: rgba(245, 245, 245, 0.256);
+  border-radius: 10px;
+  padding: 10px;
+}
+header .navbar-mobile nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 20px;
   padding-bottom: 10px;
-
+}
+header img {
+  width: 16rem;
 }
 
-.estilos-nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-
-}
-
-.navbar-mobile div ul li {
-  padding: 0 150px;
-}
-
-.estilos-nav li a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-  background-color: whitesmoke;
-  border-radius: 20px;
-  padding: 7px;
-  font-family: oswald;
-  box-shadow: 10px 10px 20px black;
+footer {
+  position: end;
   text-align: center;
+  background-color: transparent;
+}
+footer .footer-depositos {
+  display: flex;
+  margin-left: 10PX;
+  padding-top: 20px;
+  text-align: center;
+  background-color: transparent;
+}
+footer .footer-depositos ul {
+  padding-left: 7px;
+}
+footer .footer-depositos ul li {
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.589);
+  list-style: none;
+}
+footer div img {
+  width: 200px;
+  opacity: 0.5;
 }
 
-.estilos-nav li a:hover {
-  background-color: black;
-  color: whitesmoke;
-}
-
-/* Estilos Navbar - Tablet */
-@media screen and (min-width:600px) {
-  .navbar-mobile {
-    display: none;
-  }
-
-  .navbar-tablet {
-    display: flex;
-    padding-right: 20%;
-    align-items: center;
-    background-color: #ED1C24;
-    justify-content: space-between;
-  }
-
-  .navbar-tablet nav {
-    padding-top: 20px;
-  }
-
+@media screen and (min-width: 600px) {
   header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+  header .navbar-mobile {
+    display: none;
+  }
+  header .navbar-tablet {
+    display: flex;
+    padding-right: 20%;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.508);
+    justify-content: space-between;
+  }
+  header .navbar-tablet nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  header .navbar-tablet nav ul .estilos-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: transparent;
+  }
+  header .navbar-tablet nav ul .estilos-nav li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.341);
+    background-color: transparent;
+    font-family: oswald;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  header .navbar-tablet nav ul .estilos-nav li a:hover {
+    background-color: rgba(245, 245, 245, 0.256);
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
-
-/* Estilos Navbar - desktop */
-
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   header {
     justify-content: space-between;
   }
-
-  .estilos-nav {
+  header .navbar-tablet nav ul .estilos-nav {
     padding: 10px;
     padding-left: 40px;
   }
-
-  .navbar-tablet nav ul div li {
+  header .navbar-tablet nav ul .estilos-nav li {
+    padding-top: 20px;
     padding-left: 50px;
-
   }
-
-  .estilos-nav li a {
+  header .navbar-tablet nav ul .estilos-nav li a {
     padding: 10px 20px;
-
   }
-
 }
-
-
-/*********************/
-/*  FOOTER GENERAL  */
-/********************/
-footer div img {
-  width: 200px;
-}
-
-footer {
-  text-align: center;
-  background-color: #ED1C24;
-}
-
-.camion-footer {
-  text-align: center;
-}
-
-.footer-depositos ul li {
-  font-family: oswald;
-  font-size: 13px;
-  text-align: center;
-  color: whitesmoke;
-}
-
-.footer-depositos {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #ED1C24;
-  gap: 10px;
-  padding-top: 20px;
-}
-
-/* Estilos footer GENERALES - Tablet/desktop */
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
   footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-
-  .footer-depositos ul li {
-    font-size: 16px;
+  footer .footer-depositos ul li {
+    font-size: 13px;
   }
-
-  .footer-depositos ul {
-    padding-left: 30px;
-  }
-
 }
-
-/***************/
-/*  MAIN INDEX */
-/***************/
-/* Estilos main index - mobile */
-
-.contenedor-main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.estampas-index {
-  width: 20%;
-}
-
-.bloque-dos-main-index,
-.bloque-cuatro-main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: oswald;
-}
-
-.imagenes-index {
-  width: 100%;
-}
-
-/* Estilos index main - TABLET */
-@media screen and (min-width:600px) {
-  .contenedor-main-index {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 10%, 80%, 10%;
-    grid-template-areas:
-      "titulo titulo titulo"
-      "imagen2 imagen2 imagen2"
-      "texto1 imagen texto2"
-    ;
-
+@media screen and (min-width: 1024px) {
+  footer .footer-depositos ul {
+    margin-left: 5rem;
   }
-
-  .titulo-main-index {
-    grid-area: titulo;
-  }
-
-  .bloque-uno-main-index {
-    grid-area: imagen2;
-
-    padding-bottom: 4rem;
-  }
-
-  .bloque-dos-main-index {
-    grid-area: texto1;
-  }
-
-  .bloque-tres-main-index {
-    grid-area: imagen;
-  }
-
-  .bloque-cuatro-main-index {
-    grid-area: texto2;
+  footer .footer-depositos ul li {
+    font-size: 17px;
   }
 }
 
-/* Estilos index main - DESKTOP */
-@media screen and (min-width:1024px) {
-  .titulo-main-index {
-    padding: 20px;
-    position: absolute;
-    padding-left: 550px;
-    color: whitesmoke;
-    background-color: rgba(255, 0, 0, 0.306);
-  }
-
-}
-
-
-
-
-/*********************/
-/*  MAIN NOSOTROS   */
-/********************/
-.contenido-nosotros h1 {
-  text-align: center;
-  font-family: oswald;
-}
-
-.lista-objetivos ul {
-  border-style: groove;
-}
-
-.lista-objetivos ul li {
-  list-style: none;
-  padding: 0px 10px 20px 0px;
-  font-family: oswald;
-}
-
-.mula-tradys img,
-.deposito-tradys img {
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.deposito-tradys img {
-  display: none;
-}
-
-.deposito-tradys-mobile img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding-bottom: 20px;
-}
-
-
-/* Estilos NOSOTROS - Tablet */
-
-@media screen and (min-width:600px) {
-  .deposito-tradys-mobile {
-    display: none;
-  }
-
-  .deposito-tradys img {
-    display: inline-block;
-  }
-
-  .contenedor-objetivos {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
-    gap: 10px;
-    ;
-  }
-
-  .lista-objetivos {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .lista-objetivos ul {
-    margin-top: 20px;
-  }
-
-  .lista-objetivos ul li {
-    padding: 5px;
-    font-size: large;
-
-  }
-
-  .mula-tradys {
-    grid-column: span 1;
-    grid-row: span 2;
-
-  }
-
-  .deposito-tradys {
-    grid-column: span 3;
-    margin-bottom: 20px;
-
-  }
-
-  .deposito-tradys img {
-    width: 100%;
-    height: 90%;
-    margin-bottom: 20px;
-
-  }
-}
-
-/* Estilos NOSOTROS - destokp */
-@media screen and (min-width:1024px) {
-  .lista-objetivos ul li {
-    list-style: none;
-    padding: 10px 30px 20px 20px;
-  }
-
-  .lista-objetivos {
-    margin: 20px;
-    padding-top: 50px;
-  }
-}
-
-/*********************/
-/*  MAIN CLIENTES   */
-/********************/
-.contenido-main-clientes {
-  text-align: center;
-  align-items: center;
-  font-family: oswald;
-  padding-top: 40px;
-}
-
-.contenido-main-clientes img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.contenido-main-clientes div {
-  border-style: solid;
-
-}
-
-.boton-clientes {
-  background-color: rgba(0, 0, 0, 0.194);
-}
-
-.contenido-main-clientes div div div img {
-  padding: 0 40px;
-}
-
-
-@media screen and (min-width:600px) {
-  .main-clientes-tablet{
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    row-gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tamano-carrusel-pc {
-    width: 50%;
-  }
-
-}
-
-@media screen and (min-width:1024px) {
-  .contenido-main-clientes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tamano-carrusel-pc {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    margin-bottom: 100px;
-
-  }
-}
-  /********************/
- /*  MAIN DEPOSITOS  */
-/********************/
- .contenedor-depositos{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  row-gap: 20px;
- }
-  .bloque-mapa-depositos iframe{
-    width: 100%;
-    height: 100%;
-    border-color: #ED1C24;
-    background-color: #ed1c233e;
-    padding: 20px;
-    border-radius: 30px;
- }
-
-
-
-  /********************/
- /*  MAIN CONTACTO   */
-/********************/
-.contenedor-contacto form{
-  width: 50%;
-  height: 50%;
-  text-align: start;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ed1c237c;
-}
-
-.contenedor-contacto{
-  text-align: center;
-  margin: 0 auto;
-
-}
-
-.contenedor-contacto form label{
-  text-align: star;
-}
+/*# sourceMappingURL=style.css.map */
