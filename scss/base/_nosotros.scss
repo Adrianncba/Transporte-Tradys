@@ -1,0 +1,60 @@
+.contenido-nosotros{
+    h1{
+        text-align: center;
+         color: rgba(245, 245, 245, 0.493);
+         span{
+         color: red;
+  }
+       
+    }
+    .contenedor-objetivos{
+        .deposito-tradys-mobile{
+            img{
+                display: inline-block;
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                padding-bottom: 20px;
+
+            }
+        }
+        .lista-objetivos{
+            ul{
+              border-style: groove;
+
+                li{
+                    list-style: none;
+                    padding: 0px 10px 20px 0px;
+                    color: rgba(245, 245, 245, 0.493);
+
+                }
+            }
+        }
+        .mula-tradys{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.6;
+                background-color: rgba(255, 0, 0, 0.665);
+                padding: 2.5px;
+                border-radius: 10px;
+
+            }
+        }
+        .deposito-tradys{
+            img{
+                display: none;
+                opacity: 0.5;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.6;
+                background-color: rgba(255, 0, 0, 0.665);
+                padding: 2.5px;
+                border-radius: 10px;
+
+            }
+        }
+    }
+}

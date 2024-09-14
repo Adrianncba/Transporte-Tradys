@@ -11,12 +11,10 @@ body{
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100%;
     font-family: "Poppins", sans-serif;
 }
-main{
-    
-}
+
 
 //-------------------NAVBAR MOBILE BT
 .navbar-tablet {
@@ -70,7 +68,6 @@ main{
     }
 //------------------FOOTER MOBILE
 footer{
-    position: end;
     text-align: center;
     background-color:transparent;
     

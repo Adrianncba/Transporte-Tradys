@@ -1,0 +1,64 @@
+  //////////////////////////////////
+ //    ESTILOS NOSOTROS - TABLET //
+//////////////////////////////////
+@media screen and (min-width:600px) {
+    .contenido-nosotros{
+        .contenedor-objetivos{
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(3, 33%);
+            gap: 10px;
+
+            .deposito-tradys-mobile{
+            display: none;
+            }
+
+            .deposito-tradys{
+                grid-column: span 3;
+                margin-bottom: 20px;
+                  img{
+                        display: inline-block;
+                        width: 100%;
+                        height: 90%;
+                        margin-bottom: 20px;
+                       }
+            }
+            .lista-objetivos{
+                grid-column: span 2;
+                grid-row: span 2;
+                ul{
+                    margin-top: 20px;
+                    li{
+                        padding: 5px;
+                        font-size: large;
+                   }
+                }
+            }
+            .mula-tradys{
+                grid-column: span 1;
+                grid-row: span 2;
+            
+            }
+        }
+        
+    }
+}
+  //////////////////////////////////
+ //    ESTILOS NOSOTROS - TABLET //
+//////////////////////////////////
+@media screen and (min-width:1024px) {
+    .contenido-nosotros{
+        .contenedor-objetivos{
+            .lista-objetivos{
+                margin: 20px;
+                padding-top: 50px;
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px 30px 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

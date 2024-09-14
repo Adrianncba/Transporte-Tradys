@@ -58,7 +58,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -101,7 +101,6 @@ header img {
 }
 
 footer {
-  position: end;
   text-align: center;
   background-color: transparent;
 }
@@ -189,7 +188,6 @@ footer div img {
 @media screen and (min-width: 600px) {
   footer {
     margin-top: 20px;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -255,6 +253,95 @@ footer div img {
   }
   main .contenedor-main-index .bloque-cuatro-main-index {
     grid-area: texto2;
+  }
+}
+.contenido-nosotros h1 {
+  text-align: center;
+  color: rgba(245, 245, 245, 0.493);
+}
+.contenido-nosotros h1 span {
+  color: red;
+}
+.contenido-nosotros .contenedor-objetivos .deposito-tradys-mobile img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+.contenido-nosotros .contenedor-objetivos .lista-objetivos ul {
+  border-style: groove;
+}
+.contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
+  list-style: none;
+  padding: 0px 10px 20px 0px;
+  color: rgba(245, 245, 245, 0.493);
+}
+.contenido-nosotros .contenedor-objetivos .mula-tradys img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.665);
+  padding: 2.5px;
+  border-radius: 10px;
+}
+.contenido-nosotros .contenedor-objetivos .deposito-tradys img {
+  display: none;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.665);
+  padding: 2.5px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .contenido-nosotros .contenedor-objetivos {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    gap: 10px;
+  }
+  .contenido-nosotros .contenedor-objetivos .deposito-tradys-mobile {
+    display: none;
+  }
+  .contenido-nosotros .contenedor-objetivos .deposito-tradys {
+    grid-column: span 3;
+    margin-bottom: 20px;
+  }
+  .contenido-nosotros .contenedor-objetivos .deposito-tradys img {
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 20px;
+  }
+  .contenido-nosotros .contenedor-objetivos .lista-objetivos {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul {
+    margin-top: 20px;
+  }
+  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
+    padding: 5px;
+    font-size: large;
+  }
+  .contenido-nosotros .contenedor-objetivos .mula-tradys {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenido-nosotros .contenedor-objetivos .lista-objetivos {
+    margin: 20px;
+    padding-top: 50px;
+  }
+  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
+    list-style: none;
+    padding: 10px 30px 20px 20px;
   }
 }
 
