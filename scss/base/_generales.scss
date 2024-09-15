@@ -72,16 +72,17 @@ footer{
     background-color:transparent;
     
     .footer-depositos{
+        width: 100%;
         display: flex;
-        margin-left: 10PX;
+        justify-content: center;
+        align-items: center;
         padding-top: 20px;
         text-align: center;
         background-color:transparent;
         
         ul{
-            padding-left: 7px;
             li{
-                font-size: 10px;
+                font-size: 9px;
                 text-align: center;
                 color: rgba(255, 0, 0, 0.589);
                 list-style: none;
