@@ -146,23 +146,25 @@ header img {
 
 footer {
   text-align: center;
-  background-color: transparent;
+  background-color: #971318;
 }
 footer .footer-depositos {
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin-left: 10PX;
+  justify-content: space-between;
+  padding: 0 20px;
   padding-top: 20px;
-  text-align: center;
-  background-color: transparent;
 }
 footer .footer-depositos ul {
-  padding-left: 7px;
+  padding-left: 0;
+  padding: 0 auto;
 }
 footer .footer-depositos ul li {
-  font-size: 10px;
-  text-align: center;
-  color: rgba(255, 0, 0, 0.589);
-  list-style: none;
+  padding: 4px;
+  font-size: 9px;
+  text-align: start;
+  color: #C68588;
 }
 footer div img {
   width: 200px;

@@ -69,23 +69,23 @@ body{
 //------------------FOOTER MOBILE
 footer{
     text-align: center;
-    background-color:transparent;
-    
-    .footer-depositos{
+    background-color:#971318;
+        .footer-depositos{
         width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
         padding-top: 20px;
-        text-align: center;
-        background-color:transparent;
         
         ul{
+            padding-left: 0;
+            padding: 0 auto;
             li{
+                padding: 4px;
                 font-size: 9px;
-                text-align: center;
-                color: rgba(255, 0, 0, 0.589);
-                list-style: none;
+                text-align: start;
+                color: #C68588;
             }
         }
     }
