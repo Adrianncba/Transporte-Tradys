@@ -12,23 +12,23 @@
         .navbar-mobile{
             display: none;
         }
-        .navbar-tablet {
+        .navbar-tablet {        
             display: flex;
-            padding-right: 20%;
             align-items: center;
             background-color: rgba(255, 0, 0, 0.508);
-            justify-content: space-between;
+            justify-content: space-around;
             nav{
+                
                 ul{
                     display: flex;
                     flex-direction: column;
                     list-style: none;
                     gap: 20px;
-                    padding-bottom: 10px; 
+                  
                     .estilos-nav{
                         display: flex;
                         justify-content: center;
-                        padding-top: 10px;
+                        align-items: center;
                         background-color: transparent;
                         li{
                             a{

@@ -1,0 +1,58 @@
+
+
+  /////////////////////////////////
+ //        MAIN DEPOSITOS       //
+/////////////////////////////////
+main{
+    h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            span{
+             color: red;
+            }
+}
+    .contenedor-main-depositos{
+   
+   
+    .contenedor-depositos{
+        border-style: dashed;
+        color: #ED1C24;
+        .contenido-depositos{
+            width: 100%;
+            text-align: center;
+            .contenedor-textos-depositos{
+                h2{
+                    color: whitesmoke;
+                    span{
+                        background-color: #ed1c233e;
+                    }
+                }
+                ul{
+                    text-align: start;
+                   li{
+                    list-style: none;    
+                    color: white;
+                        span{
+                            color: red;
+                        }
+                    }
+                }
+                      
+            }
+             .bloque-mapa-depositos{
+                color: white;
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                    border-color: #ED1C24;
+                    background-color: #ed1c233e;
+                    padding: 20px;
+                    border-radius: 30px;
+                }
+             }
+        }
+    }
+}
+}
+

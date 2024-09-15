@@ -1,0 +1,42 @@
+  ///////////////////////////////////
+ //    ESTILOS DEPOSITOS-TABLET  //
+//////////////////////////////////
+
+@media screen and (min-width:600px){
+    .contenedor-main-depositos{
+        .contenedor-depositos{
+            margin-bottom: 20px;
+            .contenido-depositos{
+                display: flex;
+                justify-content: space-evenly;
+                .contenedor-textos-depositos{
+                    font-size: 1.5rem;
+                }
+            }
+        }    
+
+    
+    }
+}
+ ////////////////////////////////////
+ //    ESTILOS DEPOSITOS-DESTOKP  //
+///////////////////////////////////
+@media screen and (min-width:1024px){
+    .contenedor-main-depositos{
+        margin-top: 20px;
+        display: flex;
+         .contenedor-depositos{
+            margin-bottom: 20px;
+            .contenido-depositos{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .contenedor-textos-depositos{
+                    font-size: 1.5rem;
+                }
+            }
+        }    
+
+
+}
+}
