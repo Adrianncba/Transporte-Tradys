@@ -13,8 +13,11 @@ body{
     background-size: cover;
     min-height: 100%;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
-
+main{
+    margin-bottom: -10px;
+}
 
 //-------------------NAVBAR MOBILE BT
 .navbar-tablet {
@@ -70,7 +73,9 @@ body{
 footer{
     text-align: center;
     background-color:#971318;
-        .footer-depositos{
+    .contenedor-footer{
+
+         .footer-depositos{
         width: 100%;
         height: 100%;
         display: flex;
@@ -88,11 +93,33 @@ footer{
                 color: #C68588;
             }
         }
-    }
-    div{
+         }
+         .camion-footer{
         img{
             width: 200px;
             opacity: 0.5;
         }
+         }
+}
+    .iconos-redes-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        a{
+            width: 100%;
+         
+         
+            img{
+                
+                width: 4rem;
+            }
+    
     }
+    a:hover{
+        background-color:rgba(245, 245, 245, 0.256);
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
 }

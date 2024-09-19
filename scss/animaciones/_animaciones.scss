@@ -1,0 +1,56 @@
+
+
+
+/////////////////////////////////
+ //      ANIMACION-CAMION      //
+/////////////////////////////////
+
+main{
+    .animacion-camion{
+    margin-bottom: 0;
+
+    .humo{
+        animation: humo 3s infinite;
+        width: 120px;
+    }
+
+    img{
+        
+        width: 150px;
+        animation: mover-camion 3s infinite;
+        position: relative;
+       
+        
+    }
+}
+}
+
+
+
+@keyframes humo {
+0%{
+    left: -100%;
+    opacity: 0.1;
+}
+20%{
+    opacity: 0.2;
+}
+50%{
+    opacity:0.6;
+}
+100%{
+    left: 800px;
+    opacity:0.8;
+}
+
+}
+@keyframes mover-camion {
+0%{
+   left: -100%;
+}
+
+ 100%{
+    left: 800px;
+}
+
+}

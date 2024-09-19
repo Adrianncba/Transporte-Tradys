@@ -20,7 +20,7 @@ main .contenedor-main-index .titulo-main-index h1 span {
 }
 main .contenedor-main-index .bloque-uno-main-index .imagenes-index {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 20px;
   background-color: rgba(237, 28, 35, 0.2784313725);
   padding: 10PX;
@@ -37,7 +37,7 @@ main .contenedor-main-index .bloque-dos-main-index .estampas-index {
 }
 main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.9;
   border-radius: 20px;
   background-color: rgba(237, 28, 35, 0.2784313725);
   padding: 10PX;
@@ -59,7 +59,7 @@ main h1 {
   color: white;
 }
 main h1 span {
-  color: red;
+  color: rgb(216, 213, 213);
 }
 main .contenedor-main-depositos .contenedor-depositos {
   border-style: dashed;
@@ -104,6 +104,11 @@ body {
   background-size: cover;
   min-height: 100%;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: -10px;
 }
 
 .navbar-tablet {
@@ -148,7 +153,7 @@ footer {
   text-align: center;
   background-color: #971318;
 }
-footer .footer-depositos {
+footer .contenedor-footer .footer-depositos {
   width: 100%;
   height: 100%;
   display: flex;
@@ -156,19 +161,36 @@ footer .footer-depositos {
   padding: 0 20px;
   padding-top: 20px;
 }
-footer .footer-depositos ul {
+footer .contenedor-footer .footer-depositos ul {
   padding-left: 0;
   padding: 0 auto;
 }
-footer .footer-depositos ul li {
+footer .contenedor-footer .footer-depositos ul li {
   padding: 4px;
   font-size: 9px;
   text-align: start;
   color: #C68588;
 }
-footer div img {
+footer .contenedor-footer .camion-footer img {
   width: 200px;
   opacity: 0.5;
+}
+footer .iconos-redes-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+footer .iconos-redes-footer a {
+  width: 100%;
+}
+footer .iconos-redes-footer a img {
+  width: 4rem;
+}
+footer .iconos-redes-footer a:hover {
+  background-color: rgba(245, 245, 245, 0.256);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -236,15 +258,23 @@ footer div img {
     align-items: center;
     justify-content: space-evenly;
   }
-  footer .footer-depositos ul li {
+  footer .contendor-footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer .contendor-footer .footer-depositos ul li {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 1024px) {
-  footer .footer-depositos ul {
+  footer .contenedor-footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer .contenedor-footer .footer-depositos ul {
     margin-left: 5rem;
   }
-  footer .footer-depositos ul li {
+  footer .contenedor-footer .footer-depositos ul li {
     font-size: 17px;
   }
 }
@@ -415,6 +445,43 @@ footer div img {
   }
   .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos {
     font-size: 1.5rem;
+  }
+}
+main .animacion-camion {
+  margin-bottom: 0;
+}
+main .animacion-camion .humo {
+  animation: humo 3s infinite;
+  width: 120px;
+}
+main .animacion-camion img {
+  width: 150px;
+  animation: mover-camion 3s infinite;
+  position: relative;
+}
+
+@keyframes humo {
+  0% {
+    left: -100%;
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    left: 800px;
+    opacity: 0.8;
+  }
+}
+@keyframes mover-camion {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 800px;
   }
 }
 
