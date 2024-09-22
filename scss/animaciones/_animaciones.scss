@@ -5,7 +5,12 @@
  //      ANIMACION-CAMION      //
 /////////////////////////////////
 
+body{
+    overflow-x: hidden;
+
 main{
+    overflow-x: hidden;
+
     .animacion-camion{
     margin-bottom: 0;
 
@@ -24,6 +29,8 @@ main{
     }
 }
 }
+}
+
 
 
 
