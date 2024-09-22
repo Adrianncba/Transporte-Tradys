@@ -12,16 +12,20 @@
         .navbar-mobile{
             display: none;
         }
-        .navbar-tablet {        
+        .navbar-tablet { 
+            padding-right: 50px;       
             display: flex;
             align-items: center;
             background-color: rgba(255, 0, 0, 0.508);
             justify-content: space-around;
             nav{
-                
+              padding-top: 20px;
+
+                padding-left: 40px;
                 ul{
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     list-style: none;
                     gap: 20px;
                   
@@ -68,11 +72,9 @@
                                   padding: 10px;
                                   padding-left: 40px;
                                   li{
-                                    padding-top: 20px;
-                                    padding-left: 50px;
-                                    a{
-                                     padding: 10px 20px; 
-                                    }
+                                    padding-top: 1rem;
+                                    padding-left: 2rem;
+                               
                                   }
                 }
             }

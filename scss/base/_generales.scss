@@ -12,11 +12,22 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: $font-general;
     overflow-x: hidden;
 }
 main{
-    margin-bottom: -10px;
+    h1{
+        @include titulos;
+        @media screen and (min-width:1024px){
+            padding: 20px;
+            padding-left: 450px;
+            color: whitesmoke;
+            background-color: rgba(255, 0, 0, 0.306);
+         }
+    }
+
+
+    margin: 30px;
 }
 
 //-------------------NAVBAR MOBILE BT
@@ -31,10 +42,8 @@ main{
             div{
                 div{
                     .estilos-nav{
-                        display: flex;
-                        justify-content: center;
+                        @include flex-center;               
                         padding-top: 10px;
-                        background-color: transparent;
                         li{
                             a{
                                 margin-left: 20px;
@@ -46,9 +55,7 @@ main{
                                 font-size: 1.3rem;
                              }
                              a:hover{
-                                background-color:rgba(245, 245, 245, 0.256);
-                                border-radius: 10px;
-                                padding: 10px;
+                              @include hover-enlaces;
                             }
                         }
                   }
@@ -64,7 +71,7 @@ main{
               
             }
         }
-        img{
+    img{
             width: 16rem;
         }
        
@@ -72,7 +79,7 @@ main{
 //------------------FOOTER MOBILE
 footer{
     text-align: center;
-    background-color:#971318;
+    background-color: $color-tradys;
     .contenedor-footer{
 
          .footer-depositos{
@@ -90,36 +97,27 @@ footer{
                 padding: 4px;
                 font-size: 9px;
                 text-align: start;
-                color: #C68588;
+                color: $color-nav-footer;
             }
         }
          }
-         .camion-footer{
-        img{
-            width: 200px;
-            opacity: 0.5;
-        }
-         }
+
+         
 }
     .iconos-redes-footer{
-        display: flex;
+        @include flex-center;
         flex-direction: row;
-        align-items: center;
         width: 100%;
         a{
-            width: 100%;
-         
-         
-            img{
-                
+            width: 100%;                 
+            img{        
+                opacity: 0.5;      
                 width: 4rem;
             }
     
     }
     a:hover{
-        background-color:rgba(245, 245, 245, 0.256);
-        border-radius: 10px;
-        padding: 10px;
+        @include hover-enlaces;
     }
 }
 }

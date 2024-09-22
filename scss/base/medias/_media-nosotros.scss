@@ -1,9 +1,10 @@
   //////////////////////////////////
  //    ESTILOS NOSOTROS - TABLET //
 //////////////////////////////////
-@media screen and (min-width:600px) {
-    .contenido-nosotros{
-        .contenedor-objetivos{
+@media screen and (min-width:630px) {
+        main{
+   
+        .contenedor-main-nosotros{
             display: grid;
             grid-template-columns: repeat(3, 33%);
             grid-template-rows: repeat(3, 33%);
@@ -42,13 +43,14 @@
         }
         
     }
-}
+    }
+
   //////////////////////////////////
- //    ESTILOS NOSOTROS - TABLET //
+ //    ESTILOS NOSOTROS - DESTOKP //
 //////////////////////////////////
 @media screen and (min-width:1024px) {
-    .contenido-nosotros{
-        .contenedor-objetivos{
+    
+        .contenedor-main-nosotros{
             .lista-objetivos{
                 margin: 20px;
                 padding-top: 50px;
@@ -61,4 +63,3 @@
             }
         }
     }
-}

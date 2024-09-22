@@ -7,15 +7,11 @@
         .contenedor-main-index{
             display: grid;
             grid-template-columns: repeat(3, 33%);
-            grid-template-rows: 10%, 80%, 10%;
+            grid-template-rows: 80%, 20%;
             grid-template-areas:
-              "titulo titulo titulo"
               "imagen2 imagen2 imagen2"
               "texto1 imagen texto2";    
-            .titulo-main-index{
-                grid-area: titulo;
-           }
-            .bloque-uno-main-index{
+          .bloque-uno-main-index{
                 grid-area: imagen2;
                 padding-bottom: 4rem;
 

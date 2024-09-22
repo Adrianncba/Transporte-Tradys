@@ -10,85 +10,137 @@ main {
 }
 main .contenedor-main-index {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: rgb(203, 196, 196);
   text-align: center;
-  color: whitesmoke;
 }
-main .contenedor-main-index .titulo-main-index h1 span {
-  color: #ED1C24;
+main .contenedor-main-index .titulo-main-index {
+  margin: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(245, 245, 245, 0.493);
+}
+main .contenedor-main-index .titulo-main-index span {
+  color: rgba(255, 0, 0, 0.508);
 }
 main .contenedor-main-index .bloque-uno-main-index .imagenes-index {
   width: 100%;
+  height: 100%;
   opacity: 0.8;
   border-radius: 20px;
-  background-color: rgba(237, 28, 35, 0.2784313725);
+  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
 }
-main .contenedor-main-index .bloque-dos-main-index {
+main .contenedor-main-index .bloque-dos-main-index, main .contenedor-main-index .bloque-cuatro-main-index {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(203, 196, 196);
+  padding: 3px;
 }
-main .contenedor-main-index .bloque-dos-main-index .estampas-index {
+main .contenedor-main-index .bloque-dos-main-index p span, main .contenedor-main-index .bloque-cuatro-main-index p span {
+  color: red;
+}
+main .contenedor-main-index .bloque-dos-main-index .estampas-index, main .contenedor-main-index .bloque-cuatro-main-index .estampas-index {
   width: 20%;
 }
 main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
   width: 100%;
-  opacity: 0.9;
+  height: 100%;
+  opacity: 0.8;
   border-radius: 20px;
-  background-color: rgba(237, 28, 35, 0.2784313725);
+  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
 }
-main .contenedor-main-index .bloque-cuatro-main-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-main .contenedor-main-index .bloque-cuatro-main-index .estampas-index {
-  width: 20%;
-}
-
 main h1 {
   text-align: center;
-  text-transform: uppercase;
-  color: white;
+  color: rgba(245, 245, 245, 0.493);
 }
 main h1 span {
-  color: rgb(216, 213, 213);
+  color: red;
 }
-main .contenedor-main-depositos .contenedor-depositos {
+main h2 {
+  color: rgb(203, 196, 196);
+  padding: 3px;
+  font-size: 1rem;
+  text-align: center;
+  border-style: dashed;
+  border-color: rgba(255, 0, 0, 0.508);
+}
+main h2 p span {
+  color: red;
+}
+main .contenedor-main-nosotros .deposito-tradys-mobile img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border-radius: 20px;
+  background-color: rgba(255, 0, 0, 0.508);
+  padding: 10PX;
+  display: inline-block;
+  object-fit: cover;
+}
+main .contenedor-main-nosotros .lista-objetivos ul {
+  border-style: groove;
+}
+main .contenedor-main-nosotros .lista-objetivos ul li {
+  list-style: none;
+  padding: 0px 10px 20px 0px;
+  color: rgba(245, 245, 245, 0.493);
+}
+main .contenedor-main-nosotros .mula-tradys img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.665);
+  padding: 2.5px;
+  border-radius: 10px;
+}
+main .contenedor-main-nosotros .deposito-tradys img {
+  display: none;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.665);
+  padding: 2.5px;
+  border-radius: 10px;
+}
+
+.contenedor-main-depositos .contenedor-depositos {
   border-style: dashed;
   color: #ED1C24;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos {
   width: 100%;
   text-align: center;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos h2 {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos h2 {
   color: whitesmoke;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos h2 span {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos h2 span {
   background-color: rgba(237, 28, 35, 0.2431372549);
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul {
   text-align: start;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul li {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul li {
   list-style: none;
   color: white;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul li span {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .contenedor-textos-depositos ul li span {
   color: red;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .bloque-mapa-depositos {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .bloque-mapa-depositos {
   color: white;
 }
-main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .bloque-mapa-depositos iframe {
+.contenedor-main-depositos .contenedor-depositos .contenido-depositos .bloque-mapa-depositos iframe {
   width: 100%;
   height: 100%;
   border-color: #ED1C24;
@@ -97,18 +149,73 @@ main .contenedor-main-depositos .contenedor-depositos .contenido-depositos .bloq
   border-radius: 30px;
 }
 
+.contenido-main-clientes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/clientes-mano.jfif);
+  background-size: 100%;
+  opacity: 0.8;
+  border-radius: 20px;
+  border-style: double;
+  border-color: rgba(255, 0, 0, 0.508);
+  margin-top: 70px;
+}
+.contenido-main-clientes .contenedor-carrusel {
+  opacity: 10;
+}
+h2 {
+  color: rgb(203, 196, 196);
+  padding: 3px;
+  font-size: 1rem;
+  text-align: center;
+  border-style: dashed;
+  border-color: rgba(255, 0, 0, 0.508);
+}
+h2 p span {
+  color: red;
+}
+
+.main-contactos form {
+  background-color: rgba(255, 0, 0, 0.508);
+  text-align: start;
+  padding: 20px;
+}
+.main-contactos form fieldset {
+  text-align: center;
+}
+.main-contactos form fieldset label {
+  text-align: start;
+  color: rgb(203, 196, 196);
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/img-bg-2.jfif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   overflow-x: hidden;
 }
 
 main {
-  margin-bottom: -10px;
+  margin: 30px;
+}
+main h1 {
+  margin: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(245, 245, 245, 0.493);
+}
+main h1 span {
+  color: rgba(255, 0, 0, 0.508);
+}
+@media screen and (min-width: 1024px) {
+  main h1 {
+    padding: 20px;
+    padding-left: 450px;
+    color: whitesmoke;
+    background-color: rgba(255, 0, 0, 0.306);
+  }
 }
 
 .navbar-tablet {
@@ -121,8 +228,8 @@ header .navbar-mobile {
 header .navbar-mobile nav div div .estilos-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 10px;
-  background-color: transparent;
 }
 header .navbar-mobile nav div div .estilos-nav li a {
   margin-left: 20px;
@@ -151,7 +258,7 @@ header img {
 
 footer {
   text-align: center;
-  background-color: #971318;
+  background-color: rgba(255, 0, 0, 0.508);
 }
 footer .contenedor-footer .footer-depositos {
   width: 100%;
@@ -169,22 +276,20 @@ footer .contenedor-footer .footer-depositos ul li {
   padding: 4px;
   font-size: 9px;
   text-align: start;
-  color: #C68588;
-}
-footer .contenedor-footer .camion-footer img {
-  width: 200px;
-  opacity: 0.5;
+  color: rgba(245, 245, 245, 0.341);
 }
 footer .iconos-redes-footer {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   width: 100%;
 }
 footer .iconos-redes-footer a {
   width: 100%;
 }
 footer .iconos-redes-footer a img {
+  opacity: 0.5;
   width: 4rem;
 }
 footer .iconos-redes-footer a:hover {
@@ -193,6 +298,17 @@ footer .iconos-redes-footer a:hover {
   padding: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  .contenido-main-clientes {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenido-main-clientes {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 600px) {
   header {
     flex-direction: row;
@@ -203,14 +319,20 @@ footer .iconos-redes-footer a:hover {
     display: none;
   }
   header .navbar-tablet {
+    padding-right: 50px;
     display: flex;
     align-items: center;
     background-color: rgba(255, 0, 0, 0.508);
     justify-content: space-around;
   }
+  header .navbar-tablet nav {
+    padding-top: 20px;
+    padding-left: 40px;
+  }
   header .navbar-tablet nav ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     list-style: none;
     gap: 20px;
   }
@@ -244,11 +366,8 @@ footer .iconos-redes-footer a:hover {
     padding-left: 40px;
   }
   header .navbar-tablet nav ul .estilos-nav li {
-    padding-top: 20px;
-    padding-left: 50px;
-  }
-  header .navbar-tablet nav ul .estilos-nav li a {
-    padding: 10px 20px;
+    padding-top: 1rem;
+    padding-left: 2rem;
   }
 }
 @media screen and (min-width: 600px) {
@@ -282,17 +401,14 @@ footer .iconos-redes-footer a:hover {
   main .contenedor-main-index {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 10%, 80%, 10%;
-    grid-template-areas: "titulo titulo titulo" "imagen2 imagen2 imagen2" "texto1 imagen texto2";
-  }
-  main .contenedor-main-index .titulo-main-index {
-    grid-area: titulo;
+    grid-template-rows: 80%, 20%;
+    grid-template-areas: "imagen2 imagen2 imagen2" "texto1 imagen texto2";
   }
   main .contenedor-main-index .bloque-uno-main-index {
     grid-area: imagen2;
     padding-bottom: 4rem;
   }
-  main .contenedor-main-index .bloque-dos-main-index {
+  main .contenedor-main-index .bloque-dos-main-index, main .contenedor-main-index .bloque-cuatro-main-index {
     grid-area: texto1;
   }
   main .contenedor-main-index .bloque-tres-main-index {
@@ -319,7 +435,7 @@ footer .iconos-redes-footer a:hover {
   main .contenedor-main-index .bloque-uno-main-index {
     grid-area: camion;
   }
-  main .contenedor-main-index .bloque-dos-main-index {
+  main .contenedor-main-index .bloque-dos-main-index, main .contenedor-main-index .bloque-cuatro-main-index {
     grid-area: texto1;
   }
   main .contenedor-main-index .bloque-tres-main-index {
@@ -329,91 +445,48 @@ footer .iconos-redes-footer a:hover {
     grid-area: texto2;
   }
 }
-.contenido-nosotros h1 {
-  text-align: center;
-  color: rgba(245, 245, 245, 0.493);
-}
-.contenido-nosotros h1 span {
-  color: red;
-}
-.contenido-nosotros .contenedor-objetivos .deposito-tradys-mobile img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding-bottom: 20px;
-}
-.contenido-nosotros .contenedor-objetivos .lista-objetivos ul {
-  border-style: groove;
-}
-.contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
-  list-style: none;
-  padding: 0px 10px 20px 0px;
-  color: rgba(245, 245, 245, 0.493);
-}
-.contenido-nosotros .contenedor-objetivos .mula-tradys img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  background-color: rgba(255, 0, 0, 0.665);
-  padding: 2.5px;
-  border-radius: 10px;
-}
-.contenido-nosotros .contenedor-objetivos .deposito-tradys img {
-  display: none;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  background-color: rgba(255, 0, 0, 0.665);
-  padding: 2.5px;
-  border-radius: 10px;
-}
-
-@media screen and (min-width: 600px) {
-  .contenido-nosotros .contenedor-objetivos {
+@media screen and (min-width: 630px) {
+  main .contenedor-main-nosotros {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 33%);
     gap: 10px;
   }
-  .contenido-nosotros .contenedor-objetivos .deposito-tradys-mobile {
+  main .contenedor-main-nosotros .deposito-tradys-mobile {
     display: none;
   }
-  .contenido-nosotros .contenedor-objetivos .deposito-tradys {
+  main .contenedor-main-nosotros .deposito-tradys {
     grid-column: span 3;
     margin-bottom: 20px;
   }
-  .contenido-nosotros .contenedor-objetivos .deposito-tradys img {
+  main .contenedor-main-nosotros .deposito-tradys img {
     display: inline-block;
     width: 100%;
     height: 90%;
     margin-bottom: 20px;
   }
-  .contenido-nosotros .contenedor-objetivos .lista-objetivos {
+  main .contenedor-main-nosotros .lista-objetivos {
     grid-column: span 2;
     grid-row: span 2;
   }
-  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul {
+  main .contenedor-main-nosotros .lista-objetivos ul {
     margin-top: 20px;
   }
-  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
+  main .contenedor-main-nosotros .lista-objetivos ul li {
     padding: 5px;
     font-size: large;
   }
-  .contenido-nosotros .contenedor-objetivos .mula-tradys {
+  main .contenedor-main-nosotros .mula-tradys {
     grid-column: span 1;
     grid-row: span 2;
   }
 }
 @media screen and (min-width: 1024px) {
-  .contenido-nosotros .contenedor-objetivos .lista-objetivos {
+  .contenedor-main-nosotros .lista-objetivos {
     margin: 20px;
     padding-top: 50px;
   }
-  .contenido-nosotros .contenedor-objetivos .lista-objetivos ul li {
+  .contenedor-main-nosotros .lista-objetivos ul li {
     list-style: none;
     padding: 10px 30px 20px 20px;
   }
@@ -447,14 +520,51 @@ footer .iconos-redes-footer a:hover {
     font-size: 1.5rem;
   }
 }
-main .animacion-camion {
+@media screen and (min-width: 600px) {
+  main form {
+    padding: 30px;
+  }
+  main form label {
+    text-align: center;
+  }
+  main form input {
+    width: 400px;
+  }
+  main form textarea {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main form {
+    padding: 30px;
+  }
+  main form label {
+    text-align: center;
+  }
+  main form input {
+    color: black;
+    width: 500px;
+  }
+  main form textarea {
+    width: 500px;
+    height: 200px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+body main {
+  overflow-x: hidden;
+}
+body main .animacion-camion {
   margin-bottom: 0;
 }
-main .animacion-camion .humo {
+body main .animacion-camion .humo {
   animation: humo 3s infinite;
   width: 120px;
 }
-main .animacion-camion img {
+body main .animacion-camion img {
   width: 150px;
   animation: mover-camion 3s infinite;
   position: relative;
