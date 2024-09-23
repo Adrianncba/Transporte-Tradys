@@ -2,71 +2,56 @@
  //        MAIN NOSOTROS      //
 ///////////////////////////////
 
-main{
-    h1{
-        text-align: center;
-         color: rgba(245, 245, 245, 0.493);
-         span{
-         color: red;
-  }
-   
+.contenedor-nosotros-main{
+    .bloque-cuatro-nosotros{
+        display: none;
+    }
+    .bloque-uno-nosotros{
        
+        img{
+            @include imagenes;
+            width: 100%;
+        }
     }
-    h2{
-        @include parrafos;
-        font-size: 1rem;
-        text-align: center;
-        border-style: dashed;
-        border-color: $color-tradys;
-    }
-    .contenedor-main-nosotros{
-        .deposito-tradys-mobile{
+    .bloque-dos-nosotros{
+        border-style: solid;
+        border-color: rgb(151, 147, 147);
+        padding: 10px;
+        
+ 
+        li{
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-areas: 
+            "estampa servicio"
+            "descripcion descripcion";
             img{
-                @include imagenes;
-                display: inline-block;
-                object-fit: cover;
+            position: relative;
+            display: inline-block;
+            animation: mover-izquierda-derecha 2s linear infinite;
+             grid-area: estampa;
+             width: 1rem;
 
             }
-        }
-        .lista-objetivos{
-            ul{
-              border-style: groove;
-
-                li{
-                    list-style: none;
-                    padding: 0px 10px 20px 0px;
-                    color: rgba(245, 245, 245, 0.493);
-
+            h3{
+                font-size: 1rem;
+                text-decoration: underline;
+                text-align: start;
+                grid-area: servicio;
+               color: white;
+            }
+            p{
+                font-size: 0.8rem;
+                grid-area: descripcion;
+                color: $color-textos;
                 }
             }
         }
-        .mula-tradys{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0.6;
-                background-color: rgba(255, 0, 0, 0.665);
-                padding: 2.5px;
-                border-radius: 10px;
-
-            }
-        }
-        .deposito-tradys{
-            img{
-                display: none;
-                opacity: 0.5;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0.6;
-                background-color: rgba(255, 0, 0, 0.665);
-                padding: 2.5px;
-                border-radius: 10px;
-
-            }
+    }
+    .bloque-tres-nosotros{
+        img{
+            @include imagenes;
+            width: 100%;
         }
     }
 
-
-}

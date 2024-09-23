@@ -9,33 +9,73 @@ body{
     overflow-x: hidden;
 
 main{
+    
     overflow-x: hidden;
-
+    
     .animacion-camion{
-    margin-bottom: 0;
-
+    margin-bottom:-10px;
     .humo{
         animation: humo 3s infinite;
         width: 120px;
-        
+       
     }
-
-    img{
-        
+    img{ 
         width: 150px;
         animation: mover-camion 3s infinite;
         position: relative;
-       
-        
+              
+    }
+    
+
+
+}
+
+    .animacion-titulo{
+        position: relative;
+        animation: moverDerecha 1s  alternate;
+    }
+
+}
+}
+
+
+@keyframes moverDerecha{
+    0% {
+        left: -100%;
+      }
+      100% {
+        left: 0%;
+      }
+}
+@keyframes humo {
+    0%{
+        left: -100%;
+        opacity: 0.1;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity:0.6;
+    }
+    100%{
+        left: 800px;
+        opacity:0.8;
     }
 }
+
+@keyframes mover-camion {
+0%{
+   left: -100%;
 }
+
+ 100%{
+    left: 800px;
+  }
+
 }
-
-
-
-
-@keyframes humo {
+@media screen and (min-width:1024px){
+   @keyframes humo {
 0%{
     left: -100%;
     opacity: 0.1;
@@ -47,18 +87,29 @@ main{
     opacity:0.6;
 }
 100%{
-    left: 800px;
+    left: 2000px;
     opacity:0.8;
 }
 
-}
-@keyframes mover-camion {
-0%{
-   left: -100%;
-}
 
- 100%{
-    left: 800px;
 }
-
+   
+    @keyframes mover-camion {
+        0%{
+           left: -100%;
+        }
+        
+         100%{
+            left: 2000px;
+          }
+        
+        }
+  }
+@keyframes mover-izquierda-derecha {
+    0% {
+        left: 0; /* Posición inicial (izquierda) */
+    }
+    100% {
+        left: 60%; /* Se mueve hasta el final a la derecha */
+    }
 }

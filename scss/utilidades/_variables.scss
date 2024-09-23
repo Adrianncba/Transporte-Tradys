@@ -31,8 +31,11 @@ $color-textos: rgb(203, 196, 196);
     color: $color-titulos-font;
     span{
     color: $color-tradys;
+  
 }
-    
+  @media screen and (min-width:1024px) {
+      font-size: 3rem;       
+    }    
 }
 @mixin flex-center {
     display: flex;
