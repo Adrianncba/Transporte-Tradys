@@ -265,7 +265,7 @@ header img {
 footer {
   text-align: center;
   background-color: rgba(255, 0, 0, 0.508);
-  padding-top: 1rem;
+  padding: 1rem;
 }
 footer .contenedor-footer {
   padding-top: 1rem;
