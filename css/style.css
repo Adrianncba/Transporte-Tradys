@@ -35,10 +35,10 @@ main .contenedor-main-index .titulo-main-index span {
 main .contenedor-main-index .bloque-uno-main-index div div div img {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 20px;
-  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
+  opacity: 0.7;
 }
 main .contenedor-main-index .bloque-dos-main-index, main .contenedor-main-index .bloque-cuatro-main-index {
   display: flex;
@@ -58,10 +58,10 @@ main .contenedor-main-index .bloque-dos-main-index .estampas-index, main .conten
 main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 20px;
-  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
+  background-color: rgba(255, 0, 0, 0.508);
 }
 .contenedor-nosotros-main .bloque-cuatro-nosotros {
   display: none;
@@ -69,15 +69,12 @@ main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
 .contenedor-nosotros-main .bloque-uno-nosotros img {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 20px;
-  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
   width: 100%;
 }
 .contenedor-nosotros-main .bloque-dos-nosotros {
-  border-style: solid;
-  border-color: rgb(151, 147, 147);
   padding: 10px;
 }
 .contenedor-nosotros-main .bloque-dos-nosotros li {
@@ -107,9 +104,8 @@ main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
 .bloque-tres-nosotros img {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 20px;
-  background-color: rgba(255, 0, 0, 0.508);
   padding: 10PX;
   width: 100%;
 }
@@ -171,19 +167,6 @@ main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
   filter: brightness(1.5);
 }
 
-h2 {
-  color: rgb(203, 196, 196);
-  text-align: center;
-  padding: 3px;
-  font-size: 1rem;
-  text-align: center;
-  border-style: dashed;
-  border-color: rgba(255, 0, 0, 0.508);
-}
-h2 p span {
-  color: red;
-}
-
 .main-contactos form {
   background-color: rgba(255, 0, 0, 0.508);
   padding: 1rem;
@@ -237,6 +220,19 @@ main h1 span {
     background-color: rgba(255, 0, 0, 0.306);
   }
 }
+main h2 {
+  color: rgb(203, 196, 196);
+  text-align: center;
+  padding: 3px;
+  font-size: 1rem;
+  text-align: center;
+  border-style: dashed;
+  border-color: rgba(255, 0, 0, 0.508);
+}
+main h2 p span {
+  color: red;
+}
+
 .navbar-tablet {
   display: none;
 }
@@ -513,9 +509,8 @@ footer .iconos-redes-footer a:hover {
   .contenedor-nosotros-main .bloque-cuatro-nosotros img {
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 20px;
-    background-color: rgba(255, 0, 0, 0.508);
     padding: 10PX;
   }
 }

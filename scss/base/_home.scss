@@ -18,7 +18,7 @@ main{
                     div{
                         img{
                             @include imagenes;
-                      
+                            opacity: 0.7;
                         }
                     }
                 }
@@ -37,6 +37,7 @@ main{
         .bloque-tres-main-index{
             .imagenes-index{
              @include imagenes;
+             background-color: $color-tradys;
             }
         }
         .bloque-cuatro-main-index{
