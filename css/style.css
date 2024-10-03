@@ -189,8 +189,15 @@ h2 p span {
   padding: 1rem;
   text-align: center;
 }
+.main-contactos form input {
+  width: 300px;
+  margin: 0 auto;
+}
 .main-contactos form label {
   color: whitesmoke;
+}
+.main-contactos form #consulta {
+  width: 300px;
 }
 
 body {

@@ -10,10 +10,17 @@ h2{
     background-color: $color-tradys;
     padding: 1rem;  
     text-align: center;
+        input{
+            width: 300px;
+            margin: 0 auto;
+        }
         label{
             color:whitesmoke;
-        
+          
         }
+          #consulta{
+                width: 300px;
+            }
     }
     }
     
