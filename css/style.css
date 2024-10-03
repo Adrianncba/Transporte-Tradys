@@ -314,6 +314,11 @@ footer .iconos-redes-footer a:hover {
   padding: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  main {
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (min-width: 600px) {
   .contenido-main-clientes {
     width: 70vh;
@@ -335,17 +340,13 @@ footer .iconos-redes-footer a:hover {
     display: none;
   }
   header .navbar-tablet {
-    padding-right: 50px;
     display: flex;
     align-items: center;
     background-color: rgba(255, 0, 0, 0.508);
-    justify-content: space-around;
-  }
-  header .navbar-tablet nav {
-    padding-top: 20px;
-    padding-left: 40px;
+    justify-content: center;
   }
   header .navbar-tablet nav ul {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -389,7 +390,7 @@ footer .iconos-redes-footer a:hover {
 @media screen and (min-width: 600px) {
   footer {
     padding: 20px;
-    margin-top: 100px;
+    margin-top: -0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -409,7 +410,7 @@ footer .iconos-redes-footer a:hover {
 }
 @media screen and (min-width: 1024px) {
   footer {
-    margin-top: 6rem;
+    margin-top: -3rem;
   }
   footer .contenedor-footer {
     display: flex;
@@ -456,7 +457,6 @@ footer .iconos-redes-footer a:hover {
   }
   main .contenedor-main-index .bloque-uno-main-index {
     width: 50rem;
-    padding-top: 10rem;
     grid-area: camion;
   }
   main .contenedor-main-index .bloque-uno-main-index div div div img {

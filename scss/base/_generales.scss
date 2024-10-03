@@ -130,3 +130,10 @@ footer{
     }
 }
 }
+
+// Modificacion para acomodar footer con contenido
+@media screen and (min-width:1024px){
+    main{
+        margin-bottom: 2rem;
+    }
+}
