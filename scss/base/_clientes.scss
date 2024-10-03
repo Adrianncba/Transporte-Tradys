@@ -3,19 +3,19 @@
 /////////////////////////////////
 
 .contenido-main-clientes{
-    background-image: linear-gradient( 
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(./../img/clientes-mano.jfif);
-    background-size: 100%;
-    opacity: 0.8;
-    border-radius: 20px;
-    border-style:double;
-    border-color: $color-tradys;
-    margin-top: 70px;
+    @include parrafos;
     
     .contenedor-carrusel{
-         
+        background-image: linear-gradient( 
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+            url(./../img/clientes-mano.jfif);
+        background-size: 100%;
+        opacity: 0.8;
+        border-radius: 20px;
+        border-style:double;
+        border-color: $color-tradys;
+        margin-top: 70px;
         div{ 
             div{
                 div{

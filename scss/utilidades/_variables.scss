@@ -51,6 +51,7 @@ $color-textos: rgb(203, 196, 196);
 
 @mixin parrafos{
   color: $color-textos;
+  text-align: center;
   padding: 3px;
   p{
     span{

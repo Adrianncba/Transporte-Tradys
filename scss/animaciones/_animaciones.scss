@@ -1,17 +1,30 @@
 
 
-
 /////////////////////////////////
- //      ANIMACION-CAMION      //
+ //       ANIMACIONES          //
 /////////////////////////////////
-
 body{
     overflow-x: hidden;
 
 main{
     
     overflow-x: hidden;
-    
+ /////////////////////////////////
+//      ANIMACION-ESTAMPAS      //
+/////////////////////////////////
+    .contenedor-nosotros-main{
+        .bloque-dos-nosotros{
+            li{
+                img{
+                    animation: mover-izquierda-derecha 2s linear infinite;
+                }
+            }
+        }
+    }
+
+ /////////////////////////////////
+//      ANIMACION-CAMION       //
+/////////////////////////////////
     .animacion-camion{
     margin-bottom:-10px;
     .humo{
@@ -29,17 +42,18 @@ main{
 
 
 }
-
+ /////////////////////////////////
+//      ANIMACION-TITULO       //
+/////////////////////////////////
     .animacion-titulo{
         position: relative;
-        animation: moverDerecha 1s  alternate;
+        animation: mover-derecha 1s  alternate;
     }
 
 }
 }
 
-
-@keyframes moverDerecha{
+@keyframes mover-derecha{
     0% {
         left: -100%;
       }
@@ -107,9 +121,9 @@ main{
   }
 @keyframes mover-izquierda-derecha {
     0% {
-        left: 0; /* Posición inicial (izquierda) */
+        left: 0; 
     }
     100% {
-        left: 60%; /* Se mueve hasta el final a la derecha */
+        left: 60%;
     }
 }

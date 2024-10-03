@@ -4,6 +4,7 @@
 
 @media screen and (min-width:600px) {
     main{
+     
         .contenedor-main-index{
             display: grid;
             grid-template-columns: repeat(3, 33%);
@@ -12,8 +13,11 @@
               "imagen2 imagen2 imagen2"
               "texto1 imagen texto2";    
           .bloque-uno-main-index{
-                grid-area: imagen2;
-                padding-bottom: 4rem;
+            margin: 0 auto;
+            height: 100%;
+             width: 45rem;
+             grid-area: imagen2;
+            padding-bottom: 4rem;
 
           }
             .bloque-dos-main-index{
@@ -40,17 +44,23 @@
                 "titulo titulo  titulo"
                 "texto1 imagen2 texto2"
                 "camion camion camion";
-                gap: 20px; 
-                    .titulo-main-index{
-                        padding: 20px;
-                        padding-left: 450px;
-                        color: whitesmoke;
-                        background-color: rgba(255, 0, 0, 0.306);
-                     }
+                gap: 40px; 
                      .bloque-uno-main-index{
+                        width: 50rem;
+                        padding-top: 10rem;
+                      
+                        div{
+                            div{
+                                div{
+                                    img{
+                                        object-fit: cover;
+                                     
+                                    }
+                                }
+                            }
+                        }
                         grid-area: camion;
-                        width: 80%;
-                        margin: 0 auto;
+                    
                      }
                      .bloque-dos-main-index{
                         grid-area: texto1;

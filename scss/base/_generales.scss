@@ -81,9 +81,11 @@ main{
     }
 //------------------FOOTER MOBILE
 footer{
+    margin: 0 auto;
     text-align: center;
     background-color: $color-tradys;
     padding: 1rem;
+   
     .contenedor-footer{
         padding-top: 1rem;
          .footer-depositos{
@@ -94,11 +96,12 @@ footer{
         
         ul{
             padding-left: 0;
-            padding: 0 auto;
+             padding: 0 auto;
             li{
+                list-style: none;
                 padding: 4px;
                 font-size: 9px;
-                text-align: start;
+                text-align: center;
                 color: $color-nav-footer;
             }
         }

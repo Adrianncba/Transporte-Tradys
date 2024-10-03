@@ -87,26 +87,22 @@
     <h1 class="animacion-titulo">ENVIANOS TU <span>CONSULTA</span></h1>
     <h2>Para alguna entrega o para el seguimiento de algun pedido</h2>
     <div class="main-contactos">
-    <form action="">
-      <fieldset>
-        <legend>CONTACTANOS</legend>
-
-        <label for="">Nombre y apellido</label><br>
-        <input type="text">
-        <br>
-        <label for="">Telefono</label><br>
-        <input type="number">
-        <br>
-        <label for="">Email</label><br>
-        <input type="text">
-        <br>
-        <label for="">Consulta</label><br>
-        <textarea name="" id=""></textarea>
-        <br>
-        <button>Enviar</button>
-        <input type="reset">
-      </fieldset>
-    </form>
+         <form action="submit.php" method="post">
+          <label for="nombre">Nombre</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+  
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono" required><br><br>
+  
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+  
+          <label for="consulta">Consulta:</label><br>
+          <textarea id="consulta" name="consulta" rows="10"></textarea><br><br>
+  
+          <button type="submit">Enviar</button>
+          <button type="reset">Resetear</button>
+      </form>
 </div>
 
 <div class="animacion-camion">
@@ -127,17 +123,17 @@
      
        <div class="footer-depositos">
          <ul>
-           <li>El Carmelo 4203 - Cordoba</li>
+           <li>El Carmelo 3550 - Cordoba</li>
            <li>tradyscordoba@gmail.com</li>
            <li>0351-5399977</li>
          </ul>
          <ul>
-           <li>Jose Marti 2405- Buenos Aires</li>
+           <li>Av. Int. Francisco Rabanal 3069 - Buenos Aires</li>
            <li>tradysbsas@gmail.com</li>
            <li>011-38217184 </li>
          </ul>
          <ul>
-           <li>Nueva Jersey 1753 - Santa Fe</li>
+           <li>Alberdi 25 Bis- Santa Fe</li>
            <li>tradysrosario@gmail.com</li>
            <li>0341-6126111</li>
          </ul>

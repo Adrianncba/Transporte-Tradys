@@ -13,8 +13,15 @@ main{
         }
      
         .bloque-uno-main-index{
-            .imagenes-index{
-              @include imagenes;
+            div{
+                div{
+                    div{
+                        img{
+                            @include imagenes;
+                      
+                        }
+                    }
+                }
             }
         }
         .bloque-dos-main-index{
