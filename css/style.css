@@ -74,9 +74,6 @@ main .contenedor-main-index .bloque-tres-main-index .imagenes-index {
   padding: 10PX;
   width: 100%;
 }
-.contenedor-nosotros-main .bloque-dos-nosotros {
-  padding: 10px;
-}
 .contenedor-nosotros-main .bloque-dos-nosotros li {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -194,7 +191,7 @@ body {
 }
 
 main {
-  margin: 0 30px;
+  margin: 0 10px;
 }
 main h1 {
   margin: 4px;
