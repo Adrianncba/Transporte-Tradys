@@ -30,7 +30,9 @@ main{
             }
     }
  margin: 0 30px;
-
+ h2{
+    @include sub-titulos;
+}
     
 }
 
