@@ -272,7 +272,7 @@ footer {
   margin: 0 auto;
   text-align: center;
   background-color: rgba(255, 0, 0, 0.508);
-  padding: 1rem;
+  padding: 0.5px;
 }
 footer .contenedor-footer {
   padding-top: 1rem;
@@ -281,7 +281,7 @@ footer .contenedor-footer .footer-depositos {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 footer .contenedor-footer .footer-depositos ul {
   padding-left: 0;
@@ -388,6 +388,7 @@ footer .iconos-redes-footer a:hover {
 }
 @media screen and (min-width: 600px) {
   footer {
+    padding: 20px;
     margin-top: 100px;
     display: flex;
     align-items: center;
