@@ -190,14 +190,14 @@ h2 p span {
   text-align: center;
 }
 .main-contactos form input {
-  width: 300px;
+  width: 200px;
   margin: 0 auto;
 }
 .main-contactos form label {
   color: whitesmoke;
 }
 .main-contactos form #consulta {
-  width: 300px;
+  width: 240px;
 }
 
 body {
