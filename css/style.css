@@ -573,6 +573,12 @@ footer .iconos-redes-footer a:hover {
     width: 40rem;
   }
 }
+body {
+  overflow-x: hidden;
+}
+body main {
+  overflow-x: hidden;
+}
 body main .contenedor-nosotros-main .bloque-dos-nosotros li img {
   animation: mover-izquierda-derecha 2s linear infinite;
 }
@@ -582,6 +588,7 @@ body main .animacion-camion {
 body main .animacion-camion .humo {
   animation: humo 3s infinite;
   width: 120px;
+  position: relative;
 }
 body main .animacion-camion img {
   width: 150px;
