@@ -573,12 +573,6 @@ footer .iconos-redes-footer a:hover {
     width: 40rem;
   }
 }
-body {
-  overflow-x: hidden;
-}
-body main {
-  overflow-x: hidden;
-}
 body main .contenedor-nosotros-main .bloque-dos-nosotros li img {
   animation: mover-izquierda-derecha 2s linear infinite;
 }
